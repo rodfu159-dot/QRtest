@@ -166,7 +166,7 @@ with tab1:
     if st.button("Generar QR", type="primary"):
         qr_image_bytes = generar_qr(texto_generador)
         if qr_image_bytes:
-            st.image(qr_image_bytes, caption="Código QR Generado", use_column_width=False, width=250)
+            st.image(qr_image_bytes, caption="Código QR Generado", use_container_width=False, width=250)
             st.download_button(
                 label="Descargar QR",
                 data=qr_image_bytes,
